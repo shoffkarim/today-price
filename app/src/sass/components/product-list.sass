@@ -1,0 +1,38 @@
+.product
+  &-list
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-top: 38px
+  &-item
+    max-width: 511px
+    min-height: 432px
+    padding: 48px 60px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    position: relative
+    border-radius: 30px
+    &:nth-child(n)
+      background-color: #FFD8D7
+      .product-item__tagline
+        color:#EA7370
+    &:nth-child(2n)
+      background-color: #FFEACB
+      .product-item__tagline
+        color: #F3B75E
+    &:nth-child(3n)
+      background-color: #F5D4EE
+      .product-item__tagline
+        color: #D964BF
+    &__tagline
+      font-size: 28px
+      font-weight: 700
+      line-height: 36px
+    &__name
+      color:#231F20
+    &__img
+      position: absolute
+      bottom: 0px
+      right: 0px
+
