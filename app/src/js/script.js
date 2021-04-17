@@ -20,3 +20,12 @@ const commandSlider = new Swiper('.command-slider', {
     prevEl: '.slider-prev-btn',
   },
 });
+
+const reviewsSlider = new Swiper('.reviews-slider', {
+  slidesPerView: 3,
+  spaceBetween: 32,
+  navigation: {
+    nextEl: '.slider-next-btn',
+    prevEl: '.slider-prev-btn',
+  },
+});
