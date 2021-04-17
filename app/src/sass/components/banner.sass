@@ -31,3 +31,56 @@
     color: #231F20
   &-img
     margin-left: 85px
+  // banner-connect
+  &-connect
+    margin-top: 38px
+    padding: 57px 62px
+    display: flex
+    flex-direction: row
+    background-color: #fff
+    border-radius: 30px
+    margin-bottom: 97px
+    &__wrapper
+      margin-right: 116px
+    &__heading
+      font-weight: 700
+      font-size: 44px
+      line-height: 46px
+      color: #000
+      max-width: 380px
+      margin-bottom: 28px
+    &__contact
+      padding: 10px 34px
+      border-radius: 10px
+      background-color: rgba(132, 219, 128, 0.3)
+      display: flex
+      flex-direction: row
+    &__whatsapp
+      color: $lightGreen
+      padding-left: 24px
+      margin-left: 18px
+      position: relative
+      &::before
+        content: ""
+        width: 16px
+        height: 16px
+        background-image: url(/app/build/img/whatsapp.svg)
+        background-repeat: no-repeat
+        background-size: cover
+        position: absolute
+        top: 0
+        left: 0
+    &__text
+      font-size: 19px
+      line-height: 31px
+      font-weight: 400
+      color: #000
+      margin-top: 30px
+      max-width: 530px
+      margin-bottom: 28px
+    &__desc
+      margin-top: 11px
+  // banner-form
+  &-form
+    display: flex
+    flex-direction: row
