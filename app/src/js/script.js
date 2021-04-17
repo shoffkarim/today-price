@@ -3,7 +3,16 @@
 
 import '../sass/style.sass';
 
-const swiper = new Swiper('.instagram-slider', {
+const instagramSlider = new Swiper('.instagram-slider', {
+  slidesPerView: 4,
+  spaceBetween: 32,
+  navigation: {
+    nextEl: '.slider-next-btn',
+    prevEl: '.slider-prev-btn',
+  },
+});
+
+const commandSlider = new Swiper('.command-slider', {
   slidesPerView: 4,
   spaceBetween: 32,
   navigation: {
