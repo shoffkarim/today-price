@@ -13,9 +13,17 @@
       .breadcrumbs-item
         a
           color: $lightGreen
+    &--red
+      background: linear-gradient(76.05deg, #EA7370 -0.96%, rgba(255, 216, 215, 0) 41.35%), linear-gradient(256.02deg, rgba(242, 177, 174, 0.59) -3.33%, rgba(255, 216, 215, 0) 26.22%), #EA7370
+      .breadcrumbs-item
+        a
+          color: #EA7370
     &__wrapper
       padding-top: 88px
+      padding-bottom: 74px
       position: relative
+      display: flex
+      flex-direction: column
       z-index: 1
       .breadcrumbs-list
         justify-content: flex-start
@@ -43,6 +51,14 @@
       color: #fff
       margin-bottom: 65px
       margin-top: 40px
+    &__desc
+      font-size: 20px
+      line-height: 32px
+      font-weight: 400
+      color: #fff
+      margin-top: auto
+      margin-bottom: 0px
+      max-width: 380px
     &__background
       position: absolute
       top: 0
@@ -72,26 +88,79 @@
     &--row
       flex-direction: row
       justify-content: space-between
-    &__item
-      width: calc(100% / 3)
-      margin-right: 34px
-      border-radius: 30px
-      background-color: #fff
-      &:last-child
+      .product-types__item
+        width: calc(100% / 3)
+        margin-right: 34px
+        border-radius: 30px
+        background-color: #fff
+        &:last-child
+          margin-right: 0px
+      .type-item__wrapper
+        display: flex
+        flex-direction: column
+        width: 100%
+    &--column
+      flex-direction: column
+      justify-content: flex-start
+      max-width: 1200px
+      margin: 0 auto
+      .product-types__item
+        width: 100%
         margin-right: 0px
+        border-radius: 30px
+        background-color: #fff
+        margin-bottom: 55px
+      .type-item__wrapper
+        display: flex
+        flex-direction: row-reverse
+        justify-content: space-between
+        width: 100%
+        padding: 44px 62px 56px
+      .type-item__desc
+        padding: 0px
+        box-shadow: none
+        max-width: 385px
+        display: flex
+        flex-direction: column
+      .type-package__list
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-top: 38px
+      .package-item
+        border-top: none
+        padding: 0px 0px 0px 70px
+        position: relative
+        width: calc(50% - 50px)
+        margin-bottom: 20px
+        &::before
+          content: ""
+          width: 33px
+          height: 33px
+          display: block
+          position: absolute
+          top: calc(50% - 16.5px)
+          left: 0px
+          background-image: url(/app/build/img/red-plus.svg)
+          background-repeat: no-repeat
+
 
 
 
 .type
   &-item
     &__img
+      border-radius: 30px
       display: flex
       flex-direction: row
       justify-content: center
-      border-radius: 30px
-      height: 377px
       &--green
         background-color: #84DB81
+        height: 377px
+      &--red
+        background-color: #EA7370
+        height: 100%
     &__desc
       box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05)
       border-radius: 30px
@@ -126,6 +195,30 @@
         margin-bottom: 0px
         &:last-child
           margin-right: 0px
+    &__more
+      display: flex
+      flex-direction: row
+      justify-content: flex-start
+      margin-top: auto
+      p
+        position: relative
+        font-size: 16px
+        line-height: 26px
+        font-weight: 400
+        color: #2C2C2C
+        margin-bottom: 0px
+        padding-right: 15px
+        &::after
+          content: ""
+          width:8px
+          height: 4px
+          display: block
+          position: absolute
+          top: 11px
+          right: 0
+          background-image: url(/app/build/img/icon-arrow-down.svg)
+          background-repeat: no-repeat
+          background-size: cover
   // type-package
   &-package
     padding: 44px 62px
@@ -162,3 +255,10 @@
     line-height: 24px
     color: #2C2C2C
     margin-bottom: 0px
+
+.type--open
+  .type-item__wrapper
+    border-radius: 30px
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05)
+  .banner-callback
+    box-shadow: 0px 0px 30px #F9F7F4
