@@ -18,6 +18,13 @@
       .breadcrumbs-item
         a
           color: #EA7370
+    &--blue
+      background: linear-gradient(76.05deg, #82CDFF -0.96%, rgba(89, 182, 245, 0) 41.35%), linear-gradient(256.02deg, #88CFFF -3.33%, rgba(89, 182, 245, 0) 26.22%), #59B6F5
+      .breadcrumbs-item
+        a
+          color: #59B6F5
+      .product-header__desc
+        max-width: 480px
     &__wrapper
       padding-top: 88px
       padding-bottom: 74px
@@ -49,7 +56,7 @@
       font-size: 80px
       font-weight: 700
       color: #fff
-      margin-bottom: 65px
+
       margin-top: 40px
     &__desc
       font-size: 20px
@@ -74,6 +81,7 @@
   &-advantages
     display: flex
     flex-direction: row
+    margin-top: 65px
     &__item
       padding: 20px 30px
       border: 2px solid #fff
@@ -253,12 +261,15 @@
       line-height: 34px
       font-weight: 400
       color:#2C2C2C
+      margin-bottom: 32px
+      &:last-child
+        margin-bottom: 0px
       &--strong
         font-weight: 600
-        margin-top: 32px
         margin-bottom: 5px
-    &__people
+    &__desc
       border-top: 1px solid #E5E5E5
+      padding-top: 32px
 .package-item
   border-top: 1px solid #E5E5E5
   padding: 40px 0px 40px 70px
@@ -293,3 +304,15 @@
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05)
   .banner-callback
     box-shadow: 0px 0px 30px #F9F7F4
+
+.video-section
+  margin-top: 100px
+  margin-bottom: 100px
+  .section-title
+    max-width: 761px
+    text-align: center
+    margin: 0 auto
+  .video-container
+    max-width: 1000px
+    margin: 0 auto
+    margin-top: 60px
