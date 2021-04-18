@@ -101,3 +101,42 @@
         svg
           width: 100%
           height: 100%
+
+.clients
+  &-item
+    height: 376px
+    position: relative
+    overflow: hidden
+    border-radius: 30px
+    &__img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      position: absolute
+      top: 0
+      left: 0
+    &__play
+      position: absolute
+      bottom: 28px
+      left: 26px
+      display: flex
+      border-radius: 30px
+      padding-left: 47px
+      z-index: 1
+      &::before
+        content: ""
+        width:35px
+        height: 35px
+        display: block
+        position: absolute
+        top: calc(50% - 17.5px)
+        left: 0
+        background-image: url(/app/build/img/icon-play.svg)
+        background-repeat: no-repeat
+        background-size: cover
+      p
+        margin-bottom: 0px
+        font-size: 16px
+        line-height: 24px
+        font-weight: 400
+        color: #fff

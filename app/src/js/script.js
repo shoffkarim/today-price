@@ -29,3 +29,12 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     prevEl: '.slider-prev-btn',
   },
 });
+
+const clientsSlider = new Swiper('.clients-slider', {
+  slidesPerView: 4,
+  spaceBetween: 32,
+  navigation: {
+    nextEl: '.slider-next-btn',
+    prevEl: '.slider-prev-btn',
+  },
+});
