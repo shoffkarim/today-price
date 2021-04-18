@@ -25,6 +25,11 @@
           color: #59B6F5
       .product-header__desc
         max-width: 480px
+    &--orange
+      background: linear-gradient(76.05deg, #FFD089 -0.96%, rgba(255, 234, 203, 0) 41.35%), linear-gradient(256.02deg, #FFEACB -3.33%, rgba(255, 201, 121, 0) 26.22%), #F3B75E
+      .breadcrumbs-item
+        a
+          color: #F3B75E
     &__wrapper
       padding-top: 88px
       padding-bottom: 74px
@@ -316,3 +321,18 @@
     max-width: 1000px
     margin: 0 auto
     margin-top: 60px
+
+.two-list
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-top: 100px
+  margin-bottom: 100px
+  .type-package
+    background-color: #fff
+    width: calc(50% - 15px)
+    border-radius: 30px
+    &--orange
+      .package-item
+        &::before
+          background-image: url(/app/build/img/orange-plus.svg)
