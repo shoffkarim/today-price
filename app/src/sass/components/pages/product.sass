@@ -30,6 +30,11 @@
       .breadcrumbs-item
         a
           color: #F3B75E
+    &--purple
+      background: linear-gradient(76.05deg, rgba(138, 135, 246, 0.5) -0.96%, rgba(138, 135, 246, 0) 41.35%), linear-gradient(256.02deg, rgba(138, 135, 246, 0.5) -3.33%, rgba(138, 135, 246, 0) 26.22%), #8A87F6
+      .breadcrumbs-item
+        a
+          color: #8A87F6
     &__wrapper
       padding-top: 88px
       padding-bottom: 74px
@@ -255,6 +260,29 @@
   // type-package
   &-package
     padding: 44px 62px
+    &--orange
+      .package-item
+        &::before
+          background-image: url(/app/build/img/orange-plus.svg)
+    &--purple
+      .package-item
+        &::before
+          background-image: url(/app/build/img/purple-plus.svg)
+    &--banner
+      background-color: #fff
+      border-radius: 30px
+      margin-bottom: 60px
+      position: relative
+      .type-package__title
+        line-height: 36px
+        margin-bottom: 30px
+      .package-item
+        padding-top: 0
+        padding-bottom: 0px
+        border-top: none
+        margin-bottom: 30px
+      .type-package__list
+        margin-top: 30px
     &__title
       font-size: 28px
       line-height: 45px
@@ -272,6 +300,12 @@
       &--strong
         font-weight: 600
         margin-bottom: 5px
+      &--absolute
+        font-size: 16px
+        line-height: 22px
+        position: absolute
+        bottom: 69px
+        right: 80px
     &__desc
       border-top: 1px solid #E5E5E5
       padding-top: 32px
@@ -332,7 +366,3 @@
     background-color: #fff
     width: calc(50% - 15px)
     border-radius: 30px
-    &--orange
-      .package-item
-        &::before
-          background-image: url(/app/build/img/orange-plus.svg)
