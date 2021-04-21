@@ -33,13 +33,14 @@
   position: relative
   width: 100%
   &__active
-    padding: 16px 45px 16px 20px
+    padding: 16px 39px 16px 20px
     background-color: $gray
     border-radius: 10px
     font-size: 14px
     line-height: 16px
     color: #000
     border: none
+    cursor: pointer
     span
       color: #C5C5C5
     &::after
@@ -53,9 +54,11 @@
       background-image: url(/app/build/img/select-arrow.svg)
       background-repeat: no-repeat
       background-size: cover
+      transform: rotate(0deg)
+      transition: all 0.4s
   &__dropdown
     position: absolute
-    top: 50px
+    top: 47px
     left: 0px
     width: 100%
     height: 0px
@@ -64,6 +67,8 @@
     opacity: 0px
     visibility: hidden
     transition: all 0.4s
+    border-radius: 10px
+    border: 2px solid $gray
   &__list
     height: 100%
     max-height: 300px
@@ -74,13 +79,82 @@
     font-size: 14px
     line-height: 16px
     color: #000
+    background-color: $gray
+    cursor: pointer
     &:nth-child(2n)
-      background-color: $gray
+      background-color: #fff
   &.dropdown-open
     .custom-select__dropdown
       height: auto
       opacity: 1
       visibility: visible
       transition: all 0.4s
+    .custom-select__active
+      &::after
+        transform: rotate(180deg)
+        transition: all 0.4s
   input
     display: none
+
+.custom-file
+  input
+    display: none
+  &__wrapper
+    padding: 16px 39px 16px 20px
+    background-color: $gray
+    border-radius: 10px
+    font-size: 14px
+    line-height: 16px
+    color: #000
+    border: none
+    cursor: pointer
+    color: #C5C5C5
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-bottom: 8px
+    img
+      margin-right: 12px
+      width: 16px
+      height: 15px
+  &__label
+    p
+      font-size: 16px
+      line-height: 22px
+      font-weight: 400
+      color: rgba(0,0,0,0.85)
+      margin-bottom: 8px
+  &__item
+    border-radius: 10px
+    border: 1px solid #F4F4F4
+    padding: 1px 13px 1px 1px
+    display: inline-flex
+    flex-direction: row
+    align-items: center
+
+    span
+      display: inline-block
+      margin-left: 10px
+      margin-right: 10px
+    & + .custom-file__item
+      margin-top: 8px
+    &--template
+      display: none
+  &__prev
+    width: 39px
+    height: 29px
+    object-fit: cover
+  &__icon
+    width: 10px
+    height: 11px
+    cursor: pointer
+    background-image: url(/app/build/img/trash-icon.svg)
+    background-repeat: no-repeat
+    background-size: cover
+  &__loaded
+    display: none
+    flex-direction: column
+    align-items: flex-start
+  &.loaded
+    .custom-file__loaded
+      display: flex

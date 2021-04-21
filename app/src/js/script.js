@@ -2,6 +2,11 @@
 /* eslint-disable no-unused-vars */
 
 import '../sass/style.sass';
+import CustomFile from './modules/customFile';
+import CustomSelect from './modules/customSelect';
+
+const customSelect = new CustomSelect();
+const customfile = new CustomFile();
 
 const instagramSlider = new Swiper('.instagram-slider', {
   slidesPerView: 4,

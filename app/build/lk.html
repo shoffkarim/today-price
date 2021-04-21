@@ -112,134 +112,940 @@
                 <li class="request-tabs__item">Трейд-ин</li>
               </ul>
               <form class="request-form">
-                <div class="request-form__wrapper">
-                  <div class="request-form__limiter">
-                    <div class="form-block">
-                      <input class="form-input" type="tel" placeholder="Город*">
-                    </div>
-                    <div class="form-block">
-                      <input class="form-input" type="tel" placeholder="Улица*">
-                    </div>
-                  </div>
-                  <div class="request-form__limiter">
-                    <div class="form-block">
-                      <input class="form-input" type="tel" placeholder="Номер дома">
-                    </div>
-                    <div class="form-block">
-                      <div class="custom-select dropdown-open">
-                        <div class="custom-select__active">
-                          <span>Этажей в дома</span>
-                        </div>
-                        <div class="custom-select__dropdown">
-                          <ul class="custom-select__list">
-                            <li class="custom-select__item">
-                              1
-                            </li>
-                            <li class="custom-select__item">
-                              2
-                            </li>
-                            <li class="custom-select__item">
-                              3
-                            </li>
-                            <li class="custom-select__item">
-                              4
-                            </li>
-                            <li class="custom-select__item">
-                              5
-                            </li>
-                            <li class="custom-select__item">
-                              1
-                            </li>
-                            <li class="custom-select__item">
-                              2
-                            </li>
-                            <li class="custom-select__item">
-                              3
-                            </li>
-                            <li class="custom-select__item">
-                              4
-                            </li>
-                            <li class="custom-select__item">
-                              5
-                            </li>
-                            <li class="custom-select__item">
-                              1
-                            </li>
-                            <li class="custom-select__item">
-                              2
-                            </li>
-                            <li class="custom-select__item">
-                              3
-                            </li>
-                            <li class="custom-select__item">
-                              4
-                            </li>
-                            <li class="custom-select__item">
-                              5
-                            </li>
-                          </ul>
-                        </div>
-                        <input class="form-input" type="tel" placeholder="Этажей в доме*">
+                <div class="request-form__container">
+                  <div class="request-form__wrapper">
+                    <div class="request-form__limiter">
+                      <div class="form-block">
+                        <input class="form-input" type="tel" placeholder="Город*">
                       </div>
-
+                      <div class="form-block">
+                        <input class="form-input" type="tel" placeholder="Улица*">
+                      </div>
                     </div>
-                    <div class="form-block">
-                      <input class="form-input" type="tel" placeholder="Этаж*">
+                    <div class="request-form__limiter">
+                      <div class="form-block">
+                        <input class="form-input" type="tel" placeholder="Номер дома">
+                      </div>
+                      <div class="form-block">
+                        <div class="custom-select  js-custom-select">
+                          <div class="custom-select__active">
+                            <span>Этажей в дома</span>
+                          </div>
+                          <div class="custom-select__dropdown">
+                            <ul class="custom-select__list">
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                            </ul>
+                          </div>
+                          <input class="form-input js-custom-select-input" type="tel" placeholder="Этажей в доме*">
+                        </div>
+                      </div>
+                      <div class="form-block">
+                        <div class="custom-select  js-custom-select">
+                          <div class="custom-select__active">
+                            <span>Этаж*</span>
+                          </div>
+                          <div class="custom-select__dropdown">
+                            <ul class="custom-select__list">
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                            </ul>
+                          </div>
+                          <input class="form-input js-custom-select-input" type="tel" placeholder="Этаж*">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="request-form__wrapper">
+                    <div class="request-form__limiter">
+                      <div class="form-block">
+                        <input class="form-input" type="tel" placeholder="Площадь квартиры*">
+                      </div>
+                      <div class="form-block">
+                        <div class="custom-select  js-custom-select">
+                          <div class="custom-select__active">
+                            <span>Количество комнат в квартире</span>
+                          </div>
+                          <div class="custom-select__dropdown">
+                            <ul class="custom-select__list">
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                            </ul>
+                          </div>
+                          <input class="form-input js-custom-select-input" type="tel"
+                            placeholder="Количество компант в квартире*">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="request-form__limiter">
+                      <div class="form-block">
+                        <div class="custom-select  js-custom-select">
+                          <div class="custom-select__active">
+                            <span>Количество смежных комнат*</span>
+                          </div>
+                          <div class="custom-select__dropdown">
+                            <ul class="custom-select__list">
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                            </ul>
+                          </div>
+                          <input class="form-input js-custom-select-input" type="tel"
+                            placeholder="Количество смежных комнат">
+                        </div>
+                      </div>
+                      <div class="form-block">
+                        <input class="form-input" type="tel" placeholder="Площадь кухни">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="request-form__wrapper">
+                    <div class="request-form__limiter">
+                      <div class="form-block">
+                        <div class="custom-select  js-custom-select">
+                          <div class="custom-select__active">
+                            <span>Количество балконов и лоджий/span>
+                          </div>
+                          <div class="custom-select__dropdown">
+                            <ul class="custom-select__list">
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                            </ul>
+                          </div>
+                          <input class="form-input js-custom-select-input" type="tel"
+                            placeholder="Количество балконов и лоджий">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="request-form__limiter">
+                      <div class="form-block">
+                        <div class="custom-select  js-custom-select">
+                          <div class="custom-select__active">
+                            <span>Количество собственников квартиры</span>
+                          </div>
+                          <div class="custom-select__dropdown">
+                            <ul class="custom-select__list">
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                            </ul>
+                          </div>
+                          <input class="form-input js-custom-select-input" type="tel"
+                            placeholder="Количество собственников квартиры">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="request-form__wrapper">
+                    <div class="request-form__limiter">
+                      <div class="form-block">
+                        <div class="custom-select  js-custom-select">
+                          <div class="custom-select__active">
+                            <span>Обременения</span>
+                          </div>
+                          <div class="custom-select__dropdown">
+                            <ul class="custom-select__list">
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                            </ul>
+                          </div>
+                          <input class="form-input js-custom-select-input" type="tel" placeholder="Обременения">
+                        </div>
+                      </div>
+                      <div class="form-block">
+                        <div class="custom-select  js-custom-select">
+                          <div class="custom-select__active">
+                            <span>Основания права</span>
+                          </div>
+                          <div class="custom-select__dropdown">
+                            <ul class="custom-select__list">
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                            </ul>
+                          </div>
+                          <input class="form-input js-custom-select-input" type="tel" placeholder="Основания права">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="request-form__limiter">
+                      <div class="form-block">
+                        <div class="custom-select  js-custom-select">
+                          <div class="custom-select__active">
+                            <span>Срок владения</span>
+                          </div>
+                          <div class="custom-select__dropdown">
+                            <ul class="custom-select__list">
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                            </ul>
+                          </div>
+                          <input class="form-input js-custom-select-input" type="tel" placeholder="Срок владения">
+                        </div>
+                      </div>
+                      <div class="form-block">
+                        <div class="custom-select  js-custom-select">
+                          <div class="custom-select__active">
+                            <span>Что остается в квартире</span>
+                          </div>
+                          <div class="custom-select__dropdown">
+                            <ul class="custom-select__list">
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                            </ul>
+                          </div>
+                          <input class="form-input js-custom-select-input" type="tel"
+                            placeholder="Что остается в квартире">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="request-form__wrapper">
+                    <div class="request-form__limiter">
+                      <div class="form-block">
+                        <div class="custom-select js-custom-select">
+                          <div class="custom-select__active">
+                            <span>Требуется ли ремонт</span>
+                          </div>
+                          <div class="custom-select__dropdown">
+                            <ul class="custom-select__list">
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                              <li class="custom-select__item" data-value="1">
+                                1
+                              </li>
+                              <li class="custom-select__item" data-value="2">
+                                2
+                              </li>
+                              <li class="custom-select__item" data-value="3">
+                                3
+                              </li>
+                              <li class="custom-select__item" data-value="4">
+                                4
+                              </li>
+                              <li class="custom-select__item" data-value="5">
+                                5
+                              </li>
+                            </ul>
+                          </div>
+                          <input class="form-input js-custom-select-input" type="tel" placeholder="Требуется ли ремонт">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="request-form__wrapper">
-                  <div class="request-form__limiter">
+                <div class="request-form__container">
+                  <p class="request-form__subtitle">Фотографии объекта</p>
+                  <div class="request-form__wrapper">
                     <div class="form-block">
-                      <input class="form-input" type="tel" placeholder="Площадь квартиры*">
+                      <div class="custom-file custom-file--img js-custom-file">
+                        <label class="custom-file__label" for="custom-file1">
+                          <p>Дом снаружи</p>
+                          <div class="custom-file__wrapper">
+                            <img src="img/file-input.svg" alt="">
+                            Загрузить одно фото или несколько
+                          </div>
+                        </label>
+                        <input class="form-input js-custom-file-input" type="file" id="custom-file1">
+                        <div class="custom-file__loaded">
+                          <div class="custom-file__item custom-file__item--template">
+                            <img src="img/xxx.png" alt="" class="custom-file__prev">
+                            <span>xxx.png</span>
+                            <div class="custom-file__icon"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="form-block">
-                      <input class="form-input" type="tel" placeholder="Количество комнат в квартире*">
+                      <div class="custom-file custom-file--img js-custom-file">
+                        <label class="custom-file__label" for="custom-file2">
+                          <p>Парадная снаружи</p>
+                          <div class="custom-file__wrapper">
+                            <img src="img/file-input.svg" alt="">
+                            Загрузить одно фото или несколько
+                          </div>
+                        </label>
+                        <input class="form-input js-custom-file-input " type="file" id="custom-file2">
+                        <div class="custom-file__loaded">
+                          <div class="custom-file__item custom-file__item--template">
+                            <img src="img/xxx.png" alt="" class="custom-file__prev">
+                            <span>xxx.png</span>
+                            <div class="custom-file__icon"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-block">
+                      <div class="custom-file custom-file--img js-custom-file">
+                        <label class="custom-file__label" for="custom-file3">
+                          <p>Парадная внутри</p>
+                          <div class="custom-file__wrapper">
+                            <img src="img/file-input.svg" alt="">
+                            Загрузить одно фото или несколько
+                          </div>
+                        </label>
+                        <input class="form-input js-custom-file-input" type="file" id="custom-file3">
+                        <div class="custom-file__loaded">
+                          <div class="custom-file__item custom-file__item--template">
+                            <img src="img/xxx.png" alt="" class="custom-file__prev">
+                            <span>xxx.png</span>
+                            <div class="custom-file__icon"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="request-form__limiter">
+                  <div class="request-form__wrapper">
                     <div class="form-block">
-                      <input class="form-input" type="tel" placeholder="Количество смежные комнат">
+                      <div class="custom-file custom-file--img js-custom-file">
+                        <label class="custom-file__label" for="custom-file4">
+                          <p>Входная дверь</p>
+                          <div class="custom-file__wrapper">
+                            <img src="img/file-input.svg" alt="">
+                            Загрузить одно фото или несколько
+                          </div>
+                        </label>
+                        <input class="form-input js-custom-file-input" type="file" id="custom-file4">
+                        <div class="custom-file__loaded">
+                          <div class="custom-file__item custom-file__item--template">
+                            <img src="img/xxx.png" alt="" class="custom-file__prev">
+                            <span>xxx.png</span>
+                            <div class="custom-file__icon"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="form-block">
-                      <input class="form-input" type="tel" placeholder="Площадь кухни">
+                      <div class="custom-file custom-file--img js-custom-file">
+                        <label class="custom-file__label" for="custom-file5">
+                          <p>Прихожая</p>
+                          <div class="custom-file__wrapper">
+                            <img src="img/file-input.svg" alt="">
+                            Загрузить одно фото или несколько
+                          </div>
+                        </label>
+                        <input class="form-input js-custom-file-input " type="file" id="custom-file5">
+                        <div class="custom-file__loaded">
+                          <div class="custom-file__item custom-file__item--template">
+                            <img src="img/xxx.png" alt="" class="custom-file__prev">
+                            <span>xxx.png</span>
+                            <div class="custom-file__icon"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-block">
+                      <div class="custom-file custom-file--img js-custom-file">
+                        <label class="custom-file__label" for="custom-file6">
+                          <p>Комнаты</p>
+                          <div class="custom-file__wrapper">
+                            <img src="img/file-input.svg" alt="">
+                            Загрузить одно фото или несколько
+                          </div>
+                        </label>
+                        <input class="form-input js-custom-file-input" type="file" id="custom-file6">
+                        <div class="custom-file__loaded">
+                          <div class="custom-file__item custom-file__item--template">
+                            <img src="img/xxx.png" alt="" class="custom-file__prev">
+                            <span>xxx.png</span>
+                            <div class="custom-file__icon"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="request-form__wrapper">
-                  <div class="request-form__limiter">
+                  <div class="request-form__wrapper">
                     <div class="form-block">
-                      <input class="form-input" type="tel" placeholder="Количество балконов и лоджий">
+                      <div class="custom-file custom-file--img js-custom-file">
+                        <label class="custom-file__label" for="custom-file7">
+                          <p>Кухня</p>
+                          <div class="custom-file__wrapper">
+                            <img src="img/file-input.svg" alt="">
+                            Загрузить одно фото или несколько
+                          </div>
+                        </label>
+                        <input class="form-input js-custom-file-input" type="file" id="custom-file7">
+                        <div class="custom-file__loaded">
+                          <div class="custom-file__item custom-file__item--template">
+                            <img src="img/xxx.png" alt="" class="custom-file__prev">
+                            <span>xxx.png</span>
+                            <div class="custom-file__icon"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-block">
+                      <div class="custom-file custom-file--img js-custom-file">
+                        <label class="custom-file__label" for="custom-file8">
+                          <p>Туалет</p>
+                          <div class="custom-file__wrapper">
+                            <img src="img/file-input.svg" alt="">
+                            Загрузить одно фото или несколько
+                          </div>
+                        </label>
+                        <input class="form-input js-custom-file-input " type="file" id="custom-file8">
+                        <div class="custom-file__loaded">
+                          <div class="custom-file__item custom-file__item--template">
+                            <img src="img/xxx.png" alt="" class="custom-file__prev">
+                            <span>xxx.png</span>
+                            <div class="custom-file__icon"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-block">
+                      <div class="custom-file custom-file--img js-custom-file">
+                        <label class="custom-file__label" for="custom-file9">
+                          <p>Ванная</p>
+                          <div class="custom-file__wrapper">
+                            <img src="img/file-input.svg" alt="">
+                            Загрузить одно фото или несколько
+                          </div>
+                        </label>
+                        <input class="form-input js-custom-file-input" type="file" id="custom-file9">
+                        <div class="custom-file__loaded">
+                          <div class="custom-file__item custom-file__item--template">
+                            <img src="img/xxx.png" alt="" class="custom-file__prev">
+                            <span>xxx.png</span>
+                            <div class="custom-file__icon"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="request-form__limiter">
+                  <div class="request-form__wrapper">
                     <div class="form-block">
-                      <input class="form-input" type="tel" placeholder="Количество собственников квартиры*">
+                      <div class="custom-file custom-file--img js-custom-file">
+                        <label class="custom-file__label" for="custom-file10">
+                          <p>Балкон</p>
+                          <div class="custom-file__wrapper">
+                            <img src="img/file-input.svg" alt="">
+                            Загрузить одно фото или несколько
+                          </div>
+                        </label>
+                        <input class="form-input js-custom-file-input" type="file" id="custom-file10">
+                        <div class="custom-file__loaded">
+                          <div class="custom-file__item custom-file__item--template">
+                            <img src="img/xxx.png" alt="" class="custom-file__prev">
+                            <span>xxx.png</span>
+                            <div class="custom-file__icon"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-block">
+                      <div class="custom-file custom-file--img js-custom-file">
+                        <label class="custom-file__label" for="custom-file11">
+                          <p>Вид из окна</p>
+                          <div class="custom-file__wrapper">
+                            <img src="img/file-input.svg" alt="">
+                            Загрузить одно фото или несколько
+                          </div>
+                        </label>
+                        <input class="form-input js-custom-file-input " type="file" id="custom-file11">
+                        <div class="custom-file__loaded">
+                          <div class="custom-file__item custom-file__item--template">
+                            <img src="img/xxx.png" alt="" class="custom-file__prev">
+                            <span>xxx.png</span>
+                            <div class="custom-file__icon"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-block">
+                      <div class="custom-file custom-file--img js-custom-file">
+                        <label class="custom-file__label" for="custom-file12">
+                          <p>Двор</p>
+                          <div class="custom-file__wrapper">
+                            <img src="img/file-input.svg" alt="">
+                            Загрузить одно фото или несколько
+                          </div>
+                        </label>
+                        <input class="form-input js-custom-file-input" type="file" id="custom-file12">
+                        <div class="custom-file__loaded">
+                          <div class="custom-file__item custom-file__item--template">
+                            <img src="img/xxx.png" alt="" class="custom-file__prev">
+                            <span>xxx.png</span>
+                            <div class="custom-file__icon"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="request-form__wrapper">
-                  <div class="request-form__limiter">
+                  <div class="request-form__wrapper">
                     <div class="form-block">
-                      <input class="form-input" type="tel" placeholder="Обременения">
-                    </div>
-                    <div class="form-block">
-                      <input class="form-input" type="tel" placeholder="Основания права">
-                    </div>
-                  </div>
-                  <div class="request-form__limiter">
-                    <div class="form-block">
-                      <input class="form-input" type="tel" placeholder="Срок владения">
-                    </div>
-                    <div class="form-block">
-                      <input class="form-input" type="tel" placeholder="Что останется в квартире">
-                    </div>
-                  </div>
-                </div>
-                <div class="request-form__wrapper">
-                  <div class="request-form__limiter">
-                    <div class="form-block">
-                      <input class="form-input" type="tel" placeholder="Требуется ли ремонт">
+                      <div class="custom-file custom-file--img js-custom-file">
+                        <label class="custom-file__label" for="custom-file13">
+                          <p>Планировка</p>
+                          <div class="custom-file__wrapper">
+                            <img src="img/file-input.svg" alt="">
+                            Загрузить одно фото или несколько
+                          </div>
+                        </label>
+                        <input class="form-input js-custom-file-input" type="file" id="custom-file13">
+                        <div class="custom-file__loaded">
+                          <div class="custom-file__item custom-file__item--template">
+                            <img src="img/xxx.png" alt="" class="custom-file__prev">
+                            <span>xxx.png</span>
+                            <div class="custom-file__icon"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
