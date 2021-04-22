@@ -8,20 +8,24 @@
       .product-item
         max-width: calc(50% - 16px)
         width: 100%
+        padding-top: 53px
+        padding-left: 55px
         &:nth-child(n)
           background-color: #C0E5FE
           .product-item__tagline
-            color:#59B6F5
+            color: #59B6F5
         &:nth-child(2n)
           background-color: #D5D4F5
           .product-item__tagline
             color: #8A87F6
       .product-item__tagline
         max-width: 365px
+      .product-item__img
+        margin-right: 76px
   &-item
     max-width: 511px
     min-height: 432px
-    padding: 48px 60px
+    padding: 49px 60px 60px
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -31,7 +35,7 @@
     &:nth-child(n)
       background-color: #FFD8D7
       .product-item__tagline
-        color:#EA7370
+        color: #EA7370
     &:nth-child(2n)
       background-color: #FFEACB
       .product-item__tagline
@@ -45,9 +49,13 @@
       font-weight: 700
       line-height: 36px
     &__name
-      color:#231F20
+      color: #231F20
     &__img
       position: absolute
       bottom: 0px
       right: 0px
+      img
+        display: block
 
+.about-announce + .product
+  margin-top: 144px

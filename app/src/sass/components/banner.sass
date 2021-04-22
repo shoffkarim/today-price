@@ -6,14 +6,14 @@
     flex-direction: row
     background-color: rgba(132, 219, 128, 0.26)
   &-wrapper
-    padding-top: 85px
+    padding-top: 75px
     padding-left: 60px
     padding-bottom: 60px
   &-heading
     font-weight: 700
     font-size: 80px
     color: $lightGreen
-    margin-bottom: 65px
+    margin-bottom: 49px
   &-advantages
     display: flex
     flex-direction: row
@@ -29,12 +29,14 @@
       border-radius: 10px
   &-product
     color: #231F20
+    padding-left: 6px
   &-img
     margin-left: 85px
-  // banner-connect
+    img
+      display: block
   &-connect
     margin-top: 38px
-    padding: 57px 62px
+    padding: 57px 73px 57px 62px
     display: flex
     flex-direction: row
     background-color: #fff
@@ -50,7 +52,7 @@
       max-width: 380px
       margin-bottom: 28px
     &__contact
-      padding: 10px 34px
+      padding: 18px 34px
       border-radius: 10px
       background-color: rgba(132, 219, 128, 0.3)
       display: flex
@@ -81,6 +83,14 @@
       margin-bottom: 28px
     &__desc
       margin-top: 11px
+    .form-button
+      margin-left: auto
+      button
+        padding: 16px 31px 15px 31px
+        font-weight: 400
+        font-size: 16px
+    &__form
+      flex-grow: 1
   // banner-form
   &-form
     display: flex
@@ -108,6 +118,21 @@
       max-width: 565px
     .banner-connect__contact
       margin-top: 42px
+    .banner-connect__text
+      margin-top: 44px
+      margin-bottom: 41px
+    .banner-form
+      .form-block
+        width: 328px
+    .form-button
+      margin-left: 12px
+      button
+        font-size: 16px
+        font-weight: 400
+        padding-left: 57px
+        padding-top: 16px
+        padding-right: 55px
+        padding-bottom: 16px
     &__text
       font-size: 18px
       line-height: 36px
