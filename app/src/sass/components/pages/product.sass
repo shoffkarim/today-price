@@ -8,6 +8,7 @@
     flex-direction: row
     position: relative
     margin-bottom: 73px
+    overflow: hidden
     &--green
       background: linear-gradient(69.02deg, rgba(40, 177, 32, 0.3) -1.07%, rgba(40, 177, 32, 0.06) 36.44%), linear-gradient(256.02deg, rgba(40, 177, 32, 0.25) -3.33%, rgba(40, 177, 32, 0) 26.22%), #84DB80
       .breadcrumbs-item
@@ -53,7 +54,7 @@
         border-radius: 5px
         overflow: hidden
         a
-          padding: 4px 6px
+          padding: 4px 8px 4px 7px
           background-color: #fff
           font-size: 12px
           line-height: 14px
@@ -66,8 +67,7 @@
       font-size: 80px
       font-weight: 700
       color: #fff
-
-      margin-top: 40px
+      margin-top: 8px
     &__desc
       font-size: 20px
       line-height: 32px
@@ -88,12 +88,13 @@
       justify-content: center
       position: relative
       z-index: 1
+      flex-grow: 1
   &-advantages
     display: flex
     flex-direction: row
-    margin-top: 65px
+    margin-top: 51px
     &__item
-      padding: 20px 30px
+      padding: 22px 30px 24px
       border: 2px solid #fff
       border-radius: 10px
       margin-right: 25px
@@ -122,6 +123,20 @@
       justify-content: flex-start
       max-width: 1200px
       margin: 0 auto
+      .banner-callback
+        box-shadow: 0px 0px 30px #F9F7F4
+      .banner-callback .banner-connect__contact
+        margin-top: 23px
+      .banner-callback__text
+        margin-top: 3px
+      .banner-callback .banner-connect__text
+        margin-top: 26px
+      .type-package
+        padding: 48px 62px
+      .type-item__name
+        margin-bottom: 29px
+      .type-item__tagline
+        margin-bottom: 21px
       .product-types__item
         width: 100%
         margin-right: 0px
@@ -133,13 +148,19 @@
         flex-direction: row-reverse
         justify-content: space-between
         width: 100%
-        padding: 44px 62px 56px
+        padding: 49px 47px 48px 62px
       .type-item__desc
         padding: 0px
         box-shadow: none
         max-width: 385px
         display: flex
         flex-direction: column
+      .type-package__text
+        font-size: 16px
+        line-height: 26px
+        max-width: 650px
+      .type-package__desc
+        padding-top: 37px
       .type-package__list
         display: flex
         flex-direction: row
@@ -165,12 +186,14 @@
               position: absolute
               top: calc(50% - 25px)
               left: 0
+          .package-item__text
+            font-size: 18px
 
       .package-item
         border-top: none
-        padding: 0px 0px 0px 70px
+        padding: 0 0 0 61px
         position: relative
-        width: calc(50% - 50px)
+        width: calc(50% - 10px)
         margin-bottom: 20px
         &::before
           content: ""
@@ -178,13 +201,12 @@
           height: 33px
           display: block
           position: absolute
-          top: calc(50% - 16.5px)
+          top: calc(50% - 28.5px)
           left: 0px
           background-image: url(/app/build/img/red-plus.svg)
           background-repeat: no-repeat
-
-
-
+        p
+          font-size: 16px
 
 .type
   &-item
@@ -203,7 +225,7 @@
       box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05)
       border-radius: 30px
       background-color: #fff
-      padding: 44px 62px 56px
+      padding: 46px 64px 56px
     &__name
       font-size: 14px
       line-height: 22px
@@ -220,7 +242,7 @@
       line-height: 26px
       font-weight: 400
       color: #000
-      margin-bottom: 37px
+      margin-bottom: 36px
     &__words
       display: flex
       flex-direction: row
@@ -248,7 +270,7 @@
         padding-right: 15px
         &::after
           content: ""
-          width:8px
+          width: 8px
           height: 4px
           display: block
           position: absolute
@@ -265,6 +287,9 @@
         &::before
           background-image: url(/app/build/img/orange-plus.svg)
     &--purple
+      padding: 65px 62px 40px
+      .package-item__text
+        font-size: 16px
       .package-item
         &::before
           background-image: url(/app/build/img/purple-plus.svg)
@@ -293,7 +318,7 @@
       font-size: 18px
       line-height: 34px
       font-weight: 400
-      color:#2C2C2C
+      color: #2C2C2C
       margin-bottom: 32px
       &:last-child
         margin-bottom: 0px
@@ -304,14 +329,14 @@
         font-size: 16px
         line-height: 22px
         position: absolute
-        bottom: 69px
-        right: 80px
+        bottom: 70px
+        right: 87px
     &__desc
       border-top: 1px solid #E5E5E5
       padding-top: 32px
 .package-item
   border-top: 1px solid #E5E5E5
-  padding: 40px 0px 40px 70px
+  padding: 31px 0 40px 70px
   position: relative
   &::before
     content: ""
@@ -345,7 +370,7 @@
     box-shadow: 0px 0px 30px #F9F7F4
 
 .video-section
-  margin-top: 100px
+  margin-top: 138px
   margin-bottom: 100px
   .section-title
     max-width: 761px
@@ -354,7 +379,7 @@
   .video-container
     max-width: 1000px
     margin: 0 auto
-    margin-top: 60px
+    margin-top: 73px
 
 .two-list
   display: flex
@@ -366,3 +391,14 @@
     background-color: #fff
     width: calc(50% - 15px)
     border-radius: 30px
+    padding: 59px 62px 52px
+  .type-package__title
+    font-size: 28px
+    line-height: 36px
+    margin-bottom: 25px
+  .package-item__text
+    font-size: 16px
+  .package-item
+    min-height: 143px
+    display: flex
+    align-items: center
