@@ -5,10 +5,12 @@ import '../sass/style.sass';
 import CustomFile from './modules/customFile';
 import CustomSelect from './modules/customSelect';
 import Menu from './modules/menu';
+import Anchor from './modules/anchor';
 
 const customSelect = new CustomSelect();
 const customfile = new CustomFile();
 const menu = new Menu();
+const anchor = new Anchor();
 
 const instagramSlider = new Swiper('.instagram-slider', {
   slidesPerView: 4,
