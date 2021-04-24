@@ -4,9 +4,11 @@
 import '../sass/style.sass';
 import CustomFile from './modules/customFile';
 import CustomSelect from './modules/customSelect';
+import Menu from './modules/menu';
 
 const customSelect = new CustomSelect();
 const customfile = new CustomFile();
+const menu = new Menu();
 
 const instagramSlider = new Swiper('.instagram-slider', {
   slidesPerView: 4,

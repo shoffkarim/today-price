@@ -64,3 +64,26 @@
         height: auto
   &--page
     margin-top: 133px
+.services-menu
+  display: block
+  width: 0px
+  height: 100%
+  position: fixed
+  top: 0px
+  right: 0px
+  opacity: 0
+  visibility: hidden
+  transition: width 0.4s, opacity 0.4s 0.3s
+  background-color: #F9F7F4
+  z-index: 100
+  &.js-open-menu
+    opacity: 1
+    visibility: visible
+    width: 100%
+    transition: width 0.4s, opacity 0.4s 0.3s
+  &__head
+    padding-top: 60px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-bottom: 94px
