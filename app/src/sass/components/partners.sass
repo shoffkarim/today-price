@@ -4,6 +4,8 @@
     display: flex
     flex-direction: row
     justify-content: space-between
+    @media screen and ( max-width: 767px )
+      flex-wrap: wrap
   &-item
     width: 225px
     height: 225px
@@ -11,9 +13,25 @@
     flex-direction: row
     justify-content: center
     align-items: center
+    @media screen and ( max-width: 1365px )
+      width: calc(100% / 6)
+      margin-right: 20px
+      &:last-child
+        margin-right: 0px
+      a
+        width: 100%
+      img
+        width: 100%
+        object-fit: cover
+    @media screen and ( max-width: 767px )
+      width: calc(100% / 3 - 50px)
+      height: auto
+      margin-bottom: 30px
+    @media screen and ( max-width: 550px )
+      width: calc(100% / 2 - 50px)
     &:first-child
       justify-content: flex-start
     &:last-child
       justify-content: flex-end
-      
+
 

@@ -2,8 +2,20 @@
   &-announce
     display: flex
     flex-direction: row
+    &__img
+      @media screen and ( max-width: 1500px )
+        max-width: 50%
+        margin-left: auto
+        img
+          width: 100%
+      @media screen and ( max-width: 1200px )
+        display: none
     &__wrapper
       margin-right: 110px
+      @media screen and ( max-width: 1200px )
+        margin-right: 0px
+        width: 100%
+
       .bubble-link
         margin-top: auto
     &__tagline
@@ -14,6 +26,16 @@
       margin-top: 91px
       position: relative
       z-index: 2
+      @media screen and ( max-width: 1200px )
+        max-width: none
+        margin-top: 0px
+      @media screen and ( max-width: 1000px )
+        font-size: 50px
+        line-height: 60px
+      @media screen and ( max-width: 767px )
+        font-size: 28px
+        line-height: 38px
+
       &::before
         content: ""
         position: absolute
@@ -34,6 +56,9 @@
       line-height: 30px
       font-weight: 400
       max-width: 515px
+      @media screen and ( max-width: 1200px )
+        max-width: none
+        margin-bottom: 30px
     &__link
       a
         padding: 10px 24px 10px 23px

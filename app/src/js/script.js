@@ -19,6 +19,24 @@ const instagramSlider = new Swiper('.instagram-slider', {
     nextEl: '.slider-next-btn',
     prevEl: '.slider-prev-btn',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    550: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    850: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    1100: {
+      slidesPerView: 4,
+      spaceBetween: 32
+    }
+  }
 });
 
 const commandSlider = new Swiper('.command-slider', {

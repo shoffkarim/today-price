@@ -1,12 +1,26 @@
 .content-slider
+  @media screen and ( max-width: 550px )
+    padding-bottom: 90px
+    margin-bottom: 10px
   &__heading
     font-weight: 700
     font-size: 44px
     color: #000
     margin-top: 103px
     margin-bottom: 50px
+    @media screen and ( max-width: 767px )
+      font-size: 28px
+      line-height: 35px
+      margin-top: 70px
+    @media screen and ( max-width: 550px )
+      margin-bottom: 30px
     &--small
       font-size: 40px
+      @media screen and ( max-width: 767px )
+        font-size: 28px
+        line-height: 35px
+      @media screen and ( max-width: 550px )
+        margin-bottom: 30px
 
 .instagram
   &-item
@@ -144,13 +158,25 @@
   top: -37px
   right: -19px
   cursor: pointer
+  @media screen and ( max-width: 550px )
+    top: auto
+    right: 0px
+    left: 54px
+    bottom: 0px
+
 .slider-prev-btn
   position: absolute
   top: -37px
   right: 54px
   cursor: pointer
+  @media screen and ( max-width: 550px )
+    top: auto
+    right: 0px
+    left: -19px
+    bottom: 0px
 .swiper-container
   position: unset
+
 .content-slider
   position: relative
 .clients-slider
