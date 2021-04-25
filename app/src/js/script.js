@@ -46,6 +46,24 @@ const commandSlider = new Swiper('.command-slider', {
     nextEl: '.slider-next-btn',
     prevEl: '.slider-prev-btn',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    550: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    850: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    1100: {
+      slidesPerView: 4,
+      spaceBetween: 32
+    }
+  }
 });
 
 const reviewsSlider = new Swiper('.reviews-slider', {
@@ -55,6 +73,20 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     nextEl: '.slider-next-btn',
     prevEl: '.slider-prev-btn',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    550: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1100: {
+      slidesPerView: 3,
+      spaceBetween: 32
+    }
+  }
 });
 
 const clientsSlider = new Swiper('.clients-slider', {
@@ -64,4 +96,22 @@ const clientsSlider = new Swiper('.clients-slider', {
     nextEl: '.slider-next-btn',
     prevEl: '.slider-prev-btn',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    550: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    850: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    1100: {
+      slidesPerView: 4,
+      spaceBetween: 32
+    }
+  }
 });
