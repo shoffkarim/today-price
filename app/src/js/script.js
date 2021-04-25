@@ -7,7 +7,7 @@ import CustomSelect from './modules/customSelect';
 import Menu from './modules/menu';
 import Anchor from './modules/anchor';
 import Lk from './modules/lk';
-import popupCallback from './modules/popupCallback';
+import PopupCallback from './modules/popupCallback';
 
 const customSelect = new CustomSelect();
 const customfile = new CustomFile();

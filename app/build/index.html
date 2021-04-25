@@ -44,7 +44,22 @@
         </div>
         <div class="header-wrapper">
           <div class="header-lk">
-            <a>Личный кабинет</a>
+            <a href="">Личный кабинет</a>
+            <div class="lk-menu-popup">
+              <ul class="lk-menu-popup__list">
+                <li class="lk-menu-popup__item">
+                  <a href="" class="active">Личный кабинет физ. лица
+                  </a>
+                </li>
+                <li class="lk-menu-popup__item">
+                  <a href="">Личный кабинет партнера
+                  </a>
+                </li>
+                <li class="lk-menu-popup__item">
+                  <a href="" class="js-login-open">Авторизация</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="header-button">
             <button class="btn btn--green js-popup-callback">Связаться с нами</button>
@@ -539,6 +554,81 @@
           <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="1.41418" width="24" height="2" rx="1" transform="rotate(45 1.41418 0)" fill="black" />
             <rect y="16.9705" width="24" height="2" rx="1" transform="rotate(-45 0 16.9705)" fill="black" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="popup popup-login js-popup-login popup-open">
+    <div class="popup-overlay js-popup-overlay"></div>
+    <div class="popup-container">
+      <div class="popup-title">Авторизация</div>
+      <form class="popup-login__form">
+        <div class="popup-callback__lim">
+          <div class="form-block">
+            <input class="form-input" type="tel" placeholder="Телефон*">
+          </div>
+        </div>
+        <div class="popup-callback__bottom">
+          <div class="form-button">
+            <button class="btn btn--green">Авторизоваться</button>
+          </div>
+          <a class="popup-login__link js-register-open">Еще нет аккаунта?</a>
+        </div>
+      </form>
+      <div class="popup-close">
+        <button class="js-popup-close">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z"
+              fill="#F9F7F4" />
+            <path
+              d="M12.8284 7.17169L10 10.0001M7.17157 12.8285L10 10.0001M10 10.0001L7.17157 7.17169M10 10.0001L12.8284 12.8285"
+              stroke="#2C2C2C" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="popup popup-login js-popup-login popup-open">
+    <div class="popup-overlay js-popup-overlay"></div>
+    <div class="popup-container">
+      <div class="popup-title">Регистрация</div>
+      <form class="popup-login__form">
+        <div class="popup-callback__lim">
+          <div class="form-block">
+            <input class="form-input" type="tel" placeholder="E-mail*">
+          </div>
+        </div>
+        <div class="popup-callback__lim">
+          <div class="form-block">
+            <input class="form-input" type="tel" placeholder="Телефон*">
+          </div>
+        </div>
+        <div class="popup-callback__lim">
+          <div class="form-block">
+            <input class="form-input" type="tel" placeholder="ФИО*">
+          </div>
+        </div>
+        <div class="popup-callback__bottom">
+          <div class="form-button">
+            <button class="btn btn--green">Зарегистрироваться</button>
+          </div>
+          <p class="popup-callback__desc form-desc">
+            Нажимая на кнопку «Отправить заявку», я даю согласие на обработку <a href="fake">персональных данных</a>
+          </p>
+          <a class="popup-login__link js-login-open">У меня уже есть аккаунт</a>
+        </div>
+      </form>
+      <div class="popup-close">
+        <button class="js-popup-close">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z"
+              fill="#F9F7F4" />
+            <path
+              d="M12.8284 7.17169L10 10.0001M7.17157 12.8285L10 10.0001M10 10.0001L7.17157 7.17169M10 10.0001L12.8284 12.8285"
+              stroke="#2C2C2C" stroke-linecap="round" />
           </svg>
         </button>
       </div>
