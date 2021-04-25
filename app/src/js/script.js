@@ -7,12 +7,14 @@ import CustomSelect from './modules/customSelect';
 import Menu from './modules/menu';
 import Anchor from './modules/anchor';
 import Lk from './modules/lk';
+import popupCallback from './modules/popupCallback';
 
 const customSelect = new CustomSelect();
 const customfile = new CustomFile();
 const menu = new Menu();
 const anchor = new Anchor();
 const lk = new Lk();
+const popupcallback = new PopupCallback();
 
 const instagramSlider = new Swiper('.instagram-slider', {
   slidesPerView: 4,
