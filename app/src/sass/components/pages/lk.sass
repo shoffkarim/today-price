@@ -21,7 +21,7 @@
         line-height: 19px
         font-weight: 400
         color: #000
-      &.active
+      &.green
         background-color: rgba(132, 219, 128, 0.2)
         a
           color: $lightGreen
@@ -34,7 +34,6 @@
   &-container
     max-width: 1240px
     width: 100%
-
 
 .request
   width: 100%
@@ -122,9 +121,20 @@
         .form-block
           max-width: 348px
     &__bottom
-      .btn
-        padding: 15px 32px 15px
+      display: flex
+      flex-direction: row
+      justify-content: flex-start
+      flex-wrap: wrap
+      align-items: center
 
+    &__desc
+      font-size: 14px
+      font-weight: 400
+      line-height: 23px
+      max-width: 680px
+      margin-left: 34px
 
-
-
+  .btn
+    padding: 15px 32px 15px
+  .request-hidden
+    display: none

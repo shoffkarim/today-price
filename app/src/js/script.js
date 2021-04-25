@@ -6,11 +6,13 @@ import CustomFile from './modules/customFile';
 import CustomSelect from './modules/customSelect';
 import Menu from './modules/menu';
 import Anchor from './modules/anchor';
+import Lk from './modules/lk';
 
 const customSelect = new CustomSelect();
 const customfile = new CustomFile();
 const menu = new Menu();
 const anchor = new Anchor();
+const lk = new Lk();
 
 const instagramSlider = new Swiper('.instagram-slider', {
   slidesPerView: 4,
