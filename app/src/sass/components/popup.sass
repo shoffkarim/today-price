@@ -143,6 +143,23 @@
     max-width: 392px
     padding: 32px
     position: relative
+    @media screen and ( max-width: 767px )
+      max-width: 392px
+      height: auto
+      margin-top: 30px
+      border-radius: 30px
+    @media screen and ( max-width: 450px )
+      max-width: none
+      width: 100%
+      height: 100%
+      margin-top: 0px
+      border-radius: 0px
+    @media screen and ( max-height: 600px )
+      max-width: none
+      width: 100%
+      height: 100%
+      margin-top: 0px
+      border-radius: 0px
   .popup-title
     font-size: 32px
     font-weight: 700
@@ -163,3 +180,15 @@
     right: 20px
   .popup-callback__lim
     margin-bottom: 22px
+
+.popup-burger
+  .popup-container
+    align-items: flex-start
+  .popup-burger__item
+    margin-bottom: 20px
+    a
+      font-size: 18px
+      line-height: 26px
+      color: #000
+  .burger-callback
+    margin-bottom: 20px

@@ -1,13 +1,13 @@
 /* eslint-disable class-methods-use-this */
-class PopupCallback {
+class Burger {
   constructor() {
     this.init();
   }
 
   init() {
-    if (document.querySelector(".js-popup-callback")) {
-      const btns = document.querySelectorAll(".js-popup-callback");
-      const popup = document.querySelector(".js-popup");
+    if (document.querySelector(".js-popup-burger")) {
+      const btns = document.querySelectorAll(".js-burger-open");
+      const popup = document.querySelector(".js-popup-burger");
       const btnClose = popup.querySelector(".js-popup-close");
       btns.forEach(function (btn) {
         btn.addEventListener("click", function (e) {
@@ -27,4 +27,4 @@ class PopupCallback {
   }
 }
 
-export default PopupCallback;
+export default Burger;

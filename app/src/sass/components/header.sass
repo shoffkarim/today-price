@@ -37,7 +37,6 @@
       margin-right: 20px
     @media screen and ( max-width: 450px )
       margin-right: 10px
-      padding-right: 0px
     &::after
       content: ""
       width: 8px
@@ -113,6 +112,8 @@
   opacity: 0
   visibility: hidden
   transition: all 0.4s
+  @media screen and ( max-width: 450px )
+    right: calc(50% - 100px)
   &:hover
     opacity: 1
     visibility: visible
@@ -121,6 +122,7 @@
     flex-direction: column
     align-items: flex-start
   &__item
+    width: 100%
     a
       display: inline-flex
       padding: 12px 16px

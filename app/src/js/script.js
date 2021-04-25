@@ -9,6 +9,7 @@ import Anchor from './modules/anchor';
 import Lk from './modules/lk';
 import PopupCallback from './modules/popupCallback';
 import Login from "./modules/login";
+import Burger from './modules/burger';
 
 const customSelect = new CustomSelect();
 const customfile = new CustomFile();
@@ -17,6 +18,7 @@ const anchor = new Anchor();
 const lk = new Lk();
 const popupcallback = new PopupCallback();
 const login = new Login();
+const burger = new Burger();
 
 const instagramSlider = new Swiper('.instagram-slider', {
   slidesPerView: 4,
