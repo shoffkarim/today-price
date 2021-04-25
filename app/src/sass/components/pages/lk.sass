@@ -28,10 +28,11 @@
   &-signout
     display: flex
     align-items: center
+    margin-top: 4px
     svg
-      margin-right: 12px
+      margin-right: 10px
   &-container
-    max-width: 1254px
+    max-width: 1240px
     width: 100%
 
 
@@ -39,7 +40,7 @@
   width: 100%
   display: flex
   flex-direction: column
-  padding: 62px 56px
+  padding: 62px 62px
   background-color: #fff
   border-radius: 30px
   margin-bottom: 32px
@@ -61,7 +62,7 @@
     top: calc(50% - 17px)
     right: 0px
   &-inner
-    margin-top: 41px
+    margin-top: 39px
   &-tabs
     display: flex
     flex-direction: row
@@ -70,9 +71,9 @@
       border-radius: 10px
       margin-right: 17px
       border: 1px solid $lightGreen
-      padding: 18px 34px
+      padding: 18px 33px
       background-color: #fff
-      font-size: 18px
+      font-size: 16px
       line-height: 19px
       font-weight: 400
       color: #000
@@ -85,6 +86,9 @@
       display: flex
       flex-direction: row
       margin-bottom: 32px
+      .form-block
+        &:nth-child(3n)
+          margin-right: 0px
       .request-form__limiter
         &:last-child
           margin-right: 0px
@@ -111,8 +115,15 @@
       color: #000
       margin-top: 32px
       margin-bottom: 32px
-    &__container + .request-form__container
-      border-top: 1px solid #E5E5E5
+    &__container
+      & + .request-form__container
+        border-top: 1px solid #E5E5E5
+      &--file
+        .form-block
+          max-width: 348px
+    &__bottom
+      .btn
+        padding: 15px 32px 15px
 
 
 

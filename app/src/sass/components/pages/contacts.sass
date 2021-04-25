@@ -2,16 +2,34 @@
   display: flex
   flex-direction: row
   margin-top: 80px
+  @media screen and ( max-width: 1365px )
+    flex-direction: column
   &-wrapper
     max-width: 515px
     margin-right: 35px
     width: 100%
+    @media screen and ( max-width: 1365px )
+      max-width: none
+      display: flex
+      flex-wrap: wrap
+    @media screen and ( max-width: 767px )
+      flex-direction: column
   &-office
     display: flex
     flex-direction: column
+    @media screen and ( max-width: 1365px )
+      margin-right: 40px
+    @media screen and ( max-width: 767px )
+      margin-right: 0px
   &-soon
     margin-top: 43px
     padding-left: 48px
+    @media screen and ( max-width: 1365px )
+      margin-top: 0px
+      margin-right: 40px
+      padding-left: 0px
+    @media screen and ( max-width: 767px )
+      margin-right: 0px
     &__title
       font-size: 14px
       line-height: 16px
@@ -22,14 +40,24 @@
       display: flex
       flex-direction: column
       margin-bottom: 42px
+      @media screen and ( max-width: 767px )
+        margin-bottom: 20px
   &-soclinks
     display: flex
     flex-direction: row
     padding-left: 48px
+    @media screen and ( max-width: 1365px )
+      padding-left: 0px
+    @media screen and ( max-width: 767px )
+      margin-bottom: 20px
     &__item
       margin-right: 12px
   &-map
     border-top: 1px solid #DEDBD7
+    @media screen and ( max-width: 1365px )
+      width: 100%
+      img
+        width: 100%
   & + .banner-connect
     margin-top: 120px
 .office
@@ -40,6 +68,10 @@
     display: flex
     flex-direction: column
     margin-bottom: 18px
+    @media screen and ( max-width: 767px )
+      padding: 30px
+    @media screen and ( max-width: 550px )
+      padding: 20px
   &-address
     font-size: 16px
     line-height: 19px

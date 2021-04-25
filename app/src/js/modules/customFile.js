@@ -9,7 +9,6 @@ class CustomFile {
       const wraps = document.querySelectorAll(".js-custom-file");
       wraps.forEach(function (wrap) {
         const input = wrap.querySelector(".js-custom-file-input");
-        console.log(input);
         input.addEventListener("change", function () {
           wrap.classList.add("loaded");
           const files = input.files;
@@ -19,7 +18,7 @@ class CustomFile {
             let name = files[i].name;
             let item = document.createElement("div");
             item.classList.add("custom-file__item");
-            let templateItem = document.querySelector(".custom-file__item");
+            let templateItem = wrap.querySelector(".custom-file__item");
             item.innerHTML = templateItem.innerHTML;
             item.querySelector("span").innerHTML = name;
             loadedWrap.append(item);
