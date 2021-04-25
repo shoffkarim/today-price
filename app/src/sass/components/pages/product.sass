@@ -9,6 +9,12 @@
     position: relative
     margin-bottom: 73px
     overflow: hidden
+    @media screen and ( max-width: 1365px )
+      padding-left: 100px
+    @media screen and ( max-width: 950px )
+      padding-left: 50px
+    @media screen and ( max-width: 767px )
+      height: auto
     &--green
       background: linear-gradient(69.02deg, rgba(40, 177, 32, 0.3) -1.07%, rgba(40, 177, 32, 0.06) 36.44%), linear-gradient(256.02deg, rgba(40, 177, 32, 0.25) -3.33%, rgba(40, 177, 32, 0) 26.22%), #84DB80
       .breadcrumbs-item
@@ -43,6 +49,8 @@
       display: flex
       flex-direction: column
       z-index: 1
+      @media screen and ( max-width: 767px )
+        padding: 20px 0px
       .breadcrumbs-list
         justify-content: flex-start
         padding-left: 0
@@ -68,6 +76,15 @@
       font-weight: 700
       color: #fff
       margin-top: 8px
+      @media screen and ( max-width: 950px )
+        font-size: 48px
+        line-height: 54px
+      @media screen and ( max-width: 767px )
+        font-size: 40px
+        line-height: 48px
+      @media screen and ( max-width: 400px )
+        font-size: 28px
+        line-height: 32px
     &__desc
       font-size: 20px
       line-height: 32px
@@ -89,10 +106,24 @@
       position: relative
       z-index: 1
       flex-grow: 1
+      @media screen and ( max-width: 950px )
+        max-width: 300px
+        width: 100%
+        max-height: 300px
+        margin-top: auto
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+      @media screen and ( max-width: 767px )
+        display: none
   &-advantages
     display: flex
     flex-direction: row
     margin-top: 51px
+    @media screen and ( max-width: 767px )
+      flex-direction: column
+      margin-top: 10px
     &__item
       padding: 22px 30px 24px
       border: 2px solid #fff
@@ -101,17 +132,28 @@
       color: #fff
       font-size: 20px
       font-weight: 500
+      @media screen and ( max-width: 767px )
+        margin-bottom: 10px
+        padding: 18px
   // product-types
   &-types
     display: flex
     &--row
       flex-direction: row
       justify-content: space-between
+      @media screen and ( max-width: 950px )
+        flex-direction: column
       .product-types__item
         width: calc(100% / 3)
         margin-right: 34px
         border-radius: 30px
         background-color: #fff
+        @media screen and ( max-width: 1500px )
+          width: calc( 100% / 3 - 15px)
+        @media screen and ( max-width: 950px )
+          width: 100%
+          margin-right: 0px
+          margin-bottom: 30px
         &:last-child
           margin-right: 0px
       .type-item__wrapper
@@ -210,14 +252,18 @@
 
 .type
   &-item
+    overflow: hidden
     &__img
       border-radius: 30px
       display: flex
       flex-direction: row
       justify-content: center
+      overflow: hidden
       &--green
         background-color: #84DB81
         height: 377px
+        @media screen and ( max-width: 550px )
+          height: auto
       &--red
         background-color: #EA7370
         height: 100%
@@ -226,6 +272,8 @@
       border-radius: 30px
       background-color: #fff
       padding: 46px 64px 56px
+      @media screen and ( max-width: 1365px )
+        padding: 30px
     &__name
       font-size: 14px
       line-height: 22px
@@ -246,6 +294,7 @@
     &__words
       display: flex
       flex-direction: row
+      flex-wrap: wrap
       p
         font-size: 16px
         line-height: 20px
@@ -282,6 +331,9 @@
   // type-package
   &-package
     padding: 44px 62px
+    @media screen and ( max-width: 1365px )
+      padding: 30px
+
     &--orange
       .package-item
         &::before
@@ -338,6 +390,8 @@
   border-top: 1px solid #E5E5E5
   padding: 31px 0 40px 70px
   position: relative
+  @media screen and ( max-width: 950px )
+    padding: 20px 0px 20px 50px
   &::before
     content: ""
     width: 33px
