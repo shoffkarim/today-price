@@ -7,8 +7,6 @@
   &-item
     width: calc(50% - 15px)
     display: flex
-    flex-direction: row
-    justify-content: space-between
     border-radius: 30px
     margin-bottom: 34px
     @media screen and ( max-width: 1200px )
@@ -17,6 +15,7 @@
       max-height: 232px
     @media screen and ( max-width: 530px )
       min-height: auto
+      max-height: none
     &:first-child
       background-color: #DBF0D6
       .services-item__tagline
@@ -53,6 +52,13 @@
         color: #8A87F6
       .services-item__img
         background-color: #8A87F6
+    a
+      width: 100%
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      @media screen and ( max-width: 530px )
+         flex-direction: column-reverse
     &__wrapper
       padding: 39px 20px 42px 50px
       display: flex
@@ -96,7 +102,12 @@
       @media screen and ( max-width: 600px )
         max-width: 200px
       @media screen and ( max-width: 530px )
-        display: none
+        width: 100%
+        heigth: auto
+        max-height: 200px
+        max-width: none
+        img
+          object-fit: contain
       img
         width: auto
         height: auto

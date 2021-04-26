@@ -11,12 +11,7 @@
       .product-item
         max-width: calc(50% - 16px)
         width: 100%
-        padding-top: 53px
-        padding-left: 55px
-        @media screen and ( max-width: 1200px )
-          padding: 30px
         @media screen and ( max-width: 767px )
-          min-height: auto
           width: 100%
           max-width: none
           margin-bottom: 20px
@@ -29,18 +24,20 @@
           background-color: #D5D4F5
           .product-item__tagline
             color: #8A87F6
+        a
+          padding-top: 53px
+          padding-left: 55px
+          @media screen and ( max-width: 1200px )
+            padding: 30px
       .product-item__tagline
         max-width: 365px
       .product-item__img
         margin-right: 76px
+        @media screen and ( max-width: 500px )
+          margin-right: 0px
   &-item
     max-width: 511px
     min-height: 432px
-    padding: 49px 60px 60px
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    position: relative
     border-radius: 30px
     width: 100%
     @media screen and ( max-width: 1600px )
@@ -49,14 +46,14 @@
       &:nth-child(3n)
         margin-right: 0px
     @media screen and ( max-width: 1200px )
-      padding: 30px
       min-height: 300px
     @media screen and ( max-width: 767px )
-      min-height: auto
       width: 100%
       max-width: none
       margin-bottom: 20px
       margin-right: 0px
+    @media screen and ( max-width: 500px )
+      min-height: 250px
     &:nth-child(n)
       background-color: #FFD8D7
       .product-item__tagline
@@ -69,6 +66,15 @@
       background-color: #F5D4EE
       .product-item__tagline
         color: #D964BF
+    a
+      padding: 49px 60px 60px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      position: relative
+      height: 100%
+      @media screen and ( max-width: 1200px )
+        padding: 30px
     &__tagline
       font-size: 28px
       font-weight: 700
@@ -91,7 +97,9 @@
           height: 100%
           object-fit: cover
       @media screen and ( max-width: 767px )
-        display: none
+        max-width: 400px
+      @media screen and ( max-width: 500px )
+        max-width: 200px
       img
         display: block
 
