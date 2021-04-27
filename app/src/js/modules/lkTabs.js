@@ -10,6 +10,8 @@ class LkTabs {
       wraps.forEach(function (wrap) {
         const btns = wrap.querySelectorAll(".js-tab-btn");
         btns.forEach((i) => i.addEventListener("click", function () {
+          btns.forEach((j) => j.classList.remove("active"));
+          i.classList.add("active");
           const btnTabId = i.dataset.tab;
           const tabs = wrap.querySelectorAll(".js-tab");
           tabs.forEach(function (tab) {
