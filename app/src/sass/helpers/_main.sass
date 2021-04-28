@@ -79,20 +79,50 @@ body
     height: 50px
 
 .not-found
-  margin-top: 300px
-  margin-bottom:300px
-  @media screen and ( max-height: 767px )
-    margin-top: 200px
-    margin-bottom: 200px
-  @media screen and ( max-height: 550px )
-    margin-top: 100px
-    margin-bottom: 100px
+  &__wrapper
+    max-width: 1200px
+    background-color: #fff
+    border-radius: 30px
+    margin: 0 auto 60px
+    padding: 170px 115px
+    display: flex
+    align-items: center
+    @media (max-width: 1240px)
+      flex-direction: column
+      padding: 70px 100px
+      max-width: none
+      width: 100%
+    @media (max-width: 500px)
+      padding: 30px
+  &__img
+    margin-right: 100px
+    max-width: 511px
+    width: 100%
+    @media (max-width: 1240px)
+      margin-bottom: 30px
+      margin-right: 0px
+    img
+      width: 100%
+      object-fit: cover
+  &__text
+    @media (max-width: 1240px)
+      text-align: center
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 50%
+    @media (max-width: 767px)
+      max-width: none
   p
-    font-size: 54px
-    line-height: 64px
-    text-align: center
-    font-weight: 700
+    font-size: 16px
+    line-height: 20px
+    text-align: left
+    font-weight: 400
     color: #000
+    margin-bottom: 50px
+    @media (max-width: 1240px)
+      text-align: center
+      margin-bottom: 30px
 
 button, input, textarea
   font-family: 'Gilroy'

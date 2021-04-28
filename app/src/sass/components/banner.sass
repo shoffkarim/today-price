@@ -84,16 +84,34 @@
     border-radius: 30px
     margin-bottom: 97px
     @media screen and ( max-width: 1620px )
-      padding: 50px
-      flex-wrap: wrap
-      max-width: 1050px
+      padding: 50px 30px
       margin-left: auto
       margin-right: auto
+      justify-content: space-between
+      .banner-form
+        flex-wrap: wrap
+      .form-button
+        margin-left: 0px
+      .form-block
+        margin-bottom: 10px
+    @media (max-width: 1366px)
+      flex-direction: column
+      .banner-form
+        justify-content: center
+    @media (max-width: 767px)
+      .form-block
+        margin-right: 0px
     @media screen and ( max-width: 550px )
       padding: 20px
 
     &__wrapper
       margin-right: 116px
+      @media screen and ( max-width: 1620px )
+        margin-right: 20px
+      @media (max-width: 1366px)
+        display: flex
+        flex-direction: column
+        align-items: center
       @media screen and ( max-width: 1100px )
         margin-right: 0px
         width: 100%
@@ -108,8 +126,12 @@
       color: #000
       max-width: 380px
       margin-bottom: 28px
+      @media screen and ( max-width: 1620px )
+        max-width: none
       @media screen and ( max-width: 1100px )
         margin-right: 20px
+      @media screen and ( max-width: 1366px )
+        text-align: center
       @media screen and ( max-width: 550px )
         font-size: 26px
         line-height: 34px
@@ -148,6 +170,9 @@
       margin-top: 30px
       max-width: 530px
       margin-bottom: 28px
+      @media (max-width: 1366px)
+        max-width: none
+        text-align: center
       @media screen and ( max-width: 767px )
         font-size: 18px
         line-height: 24px
@@ -163,6 +188,12 @@
         font-size: 16px
     &__form
       flex-grow: 1
+      @media screen and ( max-width: 1620px )
+        flex-grow: unset
+      @media screen and ( max-width: 1366px )
+        display: flex
+        flex-direction: column
+        align-items: center
   // banner-form
   &-form
     display: flex
